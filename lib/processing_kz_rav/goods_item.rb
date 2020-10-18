@@ -1,4 +1,4 @@
-module ProcessingKz
+module ProcessingKzRav
   class GoodsItem
 
     attr_reader :title,

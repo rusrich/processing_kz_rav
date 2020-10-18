@@ -1,6 +1,6 @@
 require 'savon'
 
-module ProcessingKz
+module ProcessingKzRav
   class StartTransaction
     attr_reader :merchant_id,
                 :currency_code,
@@ -117,7 +117,7 @@ module ProcessingKz
 
     def request!
       client = Savon.client(wsdl: Config.wsdl, soap_version: 2, endpoint: Config.host)
-      request = client.call(:start_transaction, message: { 
+      request = client.call(:start_transaction, message: {
         transaction: transaction_params
       })
       response(request.body[:start_transaction_response][:return])

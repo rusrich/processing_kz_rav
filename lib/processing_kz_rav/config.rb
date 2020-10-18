@@ -1,4 +1,4 @@
-module ProcessingKz
+module ProcessingKzRav
 
   def self.config(&block)
     Config.set(&block)

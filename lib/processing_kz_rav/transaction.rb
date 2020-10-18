@@ -1,5 +1,5 @@
-module ProcessingKz
-  
+module ProcessingKzRav
+
   def self.start(*args)
     StartTransaction.new(*args)
   end
@@ -13,6 +13,6 @@ module ProcessingKz
   end
 
   def self.good(*args)
-    ProcessingKz::GoodsItem.new(*args)
+    ProcessingKzRav::GoodsItem.new(*args)
   end
 end

@@ -2,16 +2,16 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'processing_kz/version'
+require 'processing_kz_rav/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'processing_kz'
-  spec.version       = ProcessingKz::VERSION
+  spec.name          = 'processing_kz_rav'
+  spec.version       = ProcessingKzRav::VERSION
   spec.authors       = ['Pavel Tkachenko']
   spec.email         = ['tpepost@gmail.com']
   spec.summary       = 'Integrate with processing.kz easily'
   spec.description   = 'Helps to integrate with processing.kz without pain. Merchant ID is required for work.'
-  spec.homepage      = 'http://processing.kz'
+  spec.homepage      = 'https://processing.kz'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
